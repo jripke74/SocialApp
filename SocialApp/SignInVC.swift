@@ -10,9 +10,11 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
-import FirebaseAuth
 
 class SignInVC: UIViewController {
+    
+    @IBOutlet weak var emailField: FancyField!
+    @IBOutlet weak var passwordField: FancyField!
     
     @IBAction func facebookBtnTapped(_ sender: Any) {
         let facebookLogin = FBSDKLoginManager()
@@ -37,5 +39,23 @@ class SignInVC: UIViewController {
                 print("JEFF: Successfully authenticated with Firebase")
             }
         })
+    }
+    
+    @IBAction func signinTapped(_ sender: Any) {
+        if let email = emailField.text, let pwd = passwordField.text {
+            Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print("JEFF: Email user authenticated with firebase")
+                } else {
+                    Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print("JEFF: Unable to authenticate with Firebase using email")
+                        } else {
+                            print("JEFF: Successfully authenticated with firebase")
+                        }
+                    })
+                }
+            })
+        }
     }
 }
