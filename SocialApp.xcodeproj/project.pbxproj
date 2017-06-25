@@ -42,7 +42,7 @@
 		89627DE91EE99148000A1543 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		89AF813E1EEC55C70092DE83 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		89AF81401EED73E30092DE83 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		89AF81421EED85BA0092DE83 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = SocialApp/PostCell.swift; sourceTree = "<group>"; };
+		89AF81421EED85BA0092DE83 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		89D96A681EEED362003C043E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		89D96A6A1EEF0581003C043E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8A1F1459040AC731BB2213DC /* Pods-SocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,7 +112,6 @@
 			children = (
 				89627DCB1EE71987000A1543 /* SignInVC.swift */,
 				89AF813E1EEC55C70092DE83 /* FeedVC.swift */,
-				89AF81421EED85BA0092DE83 /* PostCell.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -126,6 +125,7 @@
 				89627DE71EE99016000A1543 /* FancyField.swift */,
 				89627DE91EE99148000A1543 /* FancyBtn.swift */,
 				89AF81401EED73E30092DE83 /* CircleView.swift */,
+				89AF81421EED85BA0092DE83 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
